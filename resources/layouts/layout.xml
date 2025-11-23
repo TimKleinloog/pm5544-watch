@@ -1,0 +1,25 @@
+<layout id="WatchFace" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://developer.garmin.com/downloads/connect-iq/resources.xsd">
+    <drawable id="Background" class="Background">
+    	<param name="yellow">0xCCCC00</param>
+    	<param name="cyan">0x00CCCC</param>
+        <param name="green">0x00CC00</param>
+        <param name="magenta">0xCC00CC</param>
+        <param name="red">0xCC0000</param>
+        <param name="blue">0x0000CC</param>
+        <param name="black">0x000000</param>
+        <param name="white">0xFFFFFF</param>
+        <param name="grey20">0x333333</param>
+        <param name="grey40">0x666666</param>
+        <param name="grey60">0x999999</param>
+        <param name="grey75">0xBFBFBF</param>
+        <param name="grey80">0xCCCCCC</param>
+    </drawable>
+    <!-- Date: 20px from top -->
+    <label id="DateDisplay" x="center" y="20" font="Graphics.FONT_XTINY" justification="Graphics.TEXT_JUSTIFY_CENTER" color="Graphics.COLOR_WHITE" />
+    <!-- Time: centered horizontally and vertically -->
+    <label id="TimeDisplay" x="center" y="120" font="Graphics.FONT_NUMBER_MILD" justification="Graphics.TEXT_JUSTIFY_CENTER" color="Graphics.COLOR_WHITE" />
+    <!-- Phone Connection - uses icon font -->
+    <label id="PhoneConnectionDisplay" x="center" y="180" font="@Fonts.IconsFont" justification="Graphics.TEXT_JUSTIFY_CENTER" color="Graphics.COLOR_WHITE" />
+    <!-- Battery: 120px from left, 230px from top -->
+    <label id="BatteryDisplay" x="center" y="230" font="Graphics.FONT_XTINY" justification="Graphics.TEXT_JUSTIFY_CENTER" color="Graphics.COLOR_WHITE" />
+</layout>
